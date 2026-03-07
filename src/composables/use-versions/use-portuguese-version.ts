@@ -1,261 +1,283 @@
-import type { Curriculum } from "./types"
+import type { Curriculum } from "./types";
 
 export function usePortugueseVersion() {
   const curriculum: Curriculum = {
-    name: 'Rafael Valério de Oliveira Ricardi',
-    description: 'Desenvolvedor Full-Stack com mais de 5 anos de experiência, focado em JavaScript, TypeScript, Vue.js, React.js, Node.js e Laravel.',
-    location: 'São José do Rio Preto - SP',
+    name: "Rafael Valério de Oliveira Ricardi",
+    profession:
+      "Senior Frontend Developer | React • Next.js • Vue • TypeScript",
+
+    about: {
+      title: "Sobre",
+      description:
+        "Desenvolvedor Frontend Senior com mais de 6 anos de experiência no desenvolvimento de aplicações web escaláveis. Especializado em React.js, Next.js e Vue.js com TypeScript, focado na construção de interfaces performáticas e arquiteturas frontend sustentáveis. Experiência na criação de design systems, componentes reutilizáveis, integração com APIs complexas e desenvolvimento de aplicações com visualização de dados e mapas geoespaciais. Também atuo na melhoria da qualidade de código, testes automatizados e suporte técnico a desenvolvedores.",
+    },
+
+    competences: {
+      title: "Competências",
+      items: [
+        "React.js & Next.js",
+        "Vue.js & Nuxt",
+        "TypeScript",
+        "React Hook Form",
+        "Zod",
+        "Zustand",
+        "Vuex",
+        "Pinia",
+        "Arquitetura Frontend (Feature-based)",
+        "Design Systems",
+        "API Integration & Data Layer Architecture",
+        "Geospatial Systems (OpenLayers, Leaflet)",
+        "Highcharts",
+        "Performance Optimization (Core Web Vitals, Lighthouse)",
+        "Unit Testing (Jest)",
+        "CI/CD",
+        "Docker & WebSockets",
+        "Static Analysis (ESLint/Prettier/Stylelint)",
+        "Responsive Web Design",
+        "Mobile-First Development",
+        "Code Review",
+        "AI-Assisted Development",
+        "Secure Authentication with Next.js (Cookies, Server-side Proxy)",
+        "Authentication & Session Management (Cookies, Vue.js)",
+      ],
+    },
+
+    location: "São José do Rio Preto - SP",
+
     contact: {
-      title: 'Contato',
-      email: 'rafaelvalerio1995@hotmail.com',
+      title: "Contato",
+      email: "rafaelvalerio1995@hotmail.com",
       whatsapp: {
-        cleanNumber: '5517982082974',
-        number: '+55 (17) 98208-2974',
+        cleanNumber: "5517982082974",
+        number: "+55 (17) 98208-2974",
       },
       linkedin: {
-        title: 'linkedin.com/in/rafvo',
-        url: 'https://www.linkedin.com/in/rafvo/',
+        title: "linkedin.com/in/rafvo",
+        url: "https://www.linkedin.com/in/rafvo/",
       },
       github: {
-        title: 'github.com/rafvo',
-        url: 'https://github.com/rafvo'
+        title: "github.com/rafvo",
+        url: "https://github.com/rafvo",
       },
     },
+
     languages: {
-      title: 'Idiomas',
+      title: "Idiomas",
       items: [
         {
           id: 1,
-          name: 'Português',
-          level: 'Nativo'
+          name: "Português",
+          level: "Nativo",
         },
         {
           id: 2,
-          name: 'Inglês',
-          level: 'Intermediário'
-        }
+          name: "Inglês",
+          level: "Intermediário (B1)",
+        },
       ],
     },
+
     curriculumProject: {
-      title: 'Projeto Curriculum',
-      url: 'https://www.github.com/rafvo/curriculum',
-      name: 'github.com/rafvo/curriculum',
-      description: 'Este currículo foi desenvolvido com Vue.js, Nuxt, Typescript e TailwindCSS'
+      title: "Projeto Curriculum",
+      url: "https://www.github.com/rafvo/curriculum",
+      name: "github.com/rafvo/curriculum",
+      description:
+        "Currículo desenvolvido utilizando Vue.js, Nuxt, TypeScript e TailwindCSS.",
     },
+
     experiences: {
-      title: 'Experiências Profissionais',
+      title: "Experiências Profissionais",
       items: [
         {
           id: 1,
-          position: 'Front-end Developer',
-          company: 'Join Tecnologia & Design',
-          typeOfEmployment: 'Tempo Integral',
-          startedIn: 'out de 2022',
-          endedIn: 'o momento',
+          position: "Senior Frontend Developer",
+          company: "Join Creative Tech",
+          typeOfEmployment: "Tempo Integral",
+          startedIn: "out de 2022",
+          endedIn: "atualmente",
           duration: null,
-          typeOfLocation: 'Remoto',
-          competences: {
-            title: 'Competências',
-            items: [
-              'Vue.js',
-              'Vuex',
-              'Vuetify',
-              'JavaScript',
-              'TypeScript',
-              'SASS',
-              'Pinia',
-              'Highcharts',
-              'HTML5',
-              'CSS3',
-              'Git',
-              'API Restful',
-              'Jira',
-              'Docker',
-              'Leaflet',
-              'WebSocket',
-              'Scrum',
-              'Testes Unitários com Vitest'
-            ]
-          }
+          typeOfLocation: "Remoto",
+
+          description: [
+            "• Arquitetura e desenvolvimento frontend de aplicações utilizando Next.js, Vue.js e TypeScript",
+            "• Implementação de feature-based architecture para garantir modularidade e escalabilidade",
+            "• Desenvolvimento de interfaces geoespaciais interativas com OpenLayers e Leaflet",
+            "• Integração com GeoServer e WebSockets para visualização de dados em tempo real",
+            "• Implementação de manipulação de geometrias e camadas temporais em mapas",
+            "• Evolução da arquitetura frontend e melhoria de performance e qualidade de código",
+            "• Mentoria de desenvolvedores frontend juniores e revisão de código",
+          ],
         },
+
         {
           id: 2,
-          position: 'Full-stack Developer',
-          company: 'Seti Tecnologia',
-          typeOfEmployment: 'Tempo Integral',
-          startedIn: 'jun de 2022',
-          endedIn: 'out de 2022',
-          duration: '5 meses',
-          typeOfLocation: 'Remoto',
-          competences: {
-            title: 'Competências',
-            items: [
-            'Vue.js',
-            'JavaScript',
-            'MySQL',
-            'HTML5',
-            'CSS3',
-            'Git',
-            'C++',
-            'API Restful',
-            'Jira',
-            'PHP',
-            'Scrum',
-          ]
-        }
+          position: "Full Stack Developer",
+          company: "Seti Tecnologia",
+          typeOfEmployment: "Tempo Integral",
+          startedIn: "jun de 2022",
+          endedIn: "out de 2022",
+          duration: "5 meses",
+          typeOfLocation: "Remoto",
+
+          description: [
+            "Atuação no desenvolvimento frontend utilizando Vue.js e JavaScript, com foco na construção de interfaces web integradas a APIs REST. Participei da implementação de novas funcionalidades, melhorias de performance e organização do código, contribuindo para a evolução e manutenção das aplicações.",
+          ],
         },
+
         {
           id: 3,
-          position: 'Full-stack Developer',
-          company: 'Rebuut',
-          typeOfEmployment: 'Tempo Integral',
-          startedIn: 'jan de 2021',
-          endedIn: 'mai de 2022',
-          duration: '1 ano e 5 meses',
-          typeOfLocation: 'Remoto',
-          competences: {
-            title: 'Competências',
-              items: [
-              'Vue.js',
-              'JavaScript',
-              'MySQL',
-              'HTML5',
-              'CSS3',
-              'Git',
-              'C++',
-              'API Restful',
-              'Jira',
-              'PHP',
-              'Scrum',
-            ]
-          },
+          position: "Full Stack Developer",
+          company: "Rebuut",
+          typeOfEmployment: "Tempo Integral",
+          startedIn: "jan de 2021",
+          endedIn: "mai de 2022",
+          duration: "1 ano e 5 meses",
+          typeOfLocation: "Remoto",
+
+          description: [
+            "Atuação no desenvolvimento de aplicações web utilizando Vue.js com foco em interfaces responsivas e integração com APIs REST. Durante esse período participei do desenvolvimento de uma plataforma de estética delivery, criando um aplicativo mobile utilizando Flutter e um sistema administrativo web utilizando Laravel, Vue.js e MySQL. Também atuei na containerização da aplicação utilizando Docker, contribuindo para padronização do ambiente de desenvolvimento e implantação.",
+          ],
         },
+
         {
           id: 4,
-          position: 'Web Developer (Trainee)',
-          company: 'Austa Hospital',
-          typeOfEmployment: 'Meio Período',
-          startedIn: 'jul de 2019',
-          endedIn: 'dez de 2020',
-          duration: '1 ano e 6 meses',
-          typeOfLocation: 'Presencial',
-          competences: {
-            title: 'Competências',
-            items: [
-              'PL/SQL',
-              'JavaScript',
-              'JQuery',
-              'Highcharts',
-              'HTML5',
-              'CSS3',
-              'PHP',
-              'Bootstrap',
-              'Trello'
-            ]
-          }
+          position: "Web Developer (Estagiário)",
+          company: "Austa Hospital",
+          typeOfEmployment: "Meio Período",
+          startedIn: "jul de 2019",
+          endedIn: "dez de 2020",
+          duration: "1 ano e 6 meses",
+          typeOfLocation: "Presencial",
+
+          description: [
+            "Atuação no desenvolvimento de interfaces web e dashboards utilizando Highcharts para visualização de dados. Implementei funcionalidades com JavaScript, PHP e PL/SQL, além de realizar manutenção e evolução de sistemas internos hospitalares.",
+          ],
         },
-      ]
-    },
-    academicTraining: {
-      title: 'Formação Acadêmica',
-      items: [
-        {
-          id: 1,
-          endedIn: 'Dez 2020',
-          status: 'CONCLUÍDO',
-          course: 'Análise e Desenvolvimento de Sistemas',
-          level: 'SUPERIOR',
-          institution: 'Fatec Rio Preto',
-        },
-        {
-          id: 2,
-          endedIn: 'Dez 2019',
-          status: 'CONCLUÍDO',
-          course: 'Tecnico em Informática',
-          level: 'TÉCNICO',
-          institution: 'Senac',
-        },
-        {
-          id: 3,
-          endedIn: 'Dez 2017',
-          status: 'CONCLUÍDO',
-          course: 'Tecnico em Informática para Internet',
-          level: 'TÉCNICO',
-          institution: 'Etec Philadelpho Gouvêa Netto',
-        }
       ],
     },
-    complementaryCourses: {
-      title: 'Cursos Complementares',
+
+    academicTraining: {
+      title: "Formação Acadêmica",
       items: [
         {
           id: 1,
-          endedIn: 'Jun 2024',
-          status: 'CONCLUÍDO',
-          course: 'React: criando um Design System com TailwindCSS',
-          institution: 'Alura',
+          endedIn: "Dez 2020",
+          status: "CONCLUÍDO",
+          course: "Análise e Desenvolvimento de Sistemas",
+          level: "SUPERIOR",
+          institution: "Fatec Rio Preto",
         },
         {
           id: 2,
-          endedIn: 'Jun 2024',
-          status: 'CONCLUÍDO',
-          course: 'Laravel: transações, service container e autenticação',
-          institution: 'Alura',
+          endedIn: "Dez 2019",
+          status: "CONCLUÍDO",
+          course: "Técnico em Informática",
+          level: "TÉCNICO",
+          institution: "Senac",
         },
         {
           id: 3,
-          endedIn: 'Jun 2024',
-          status: 'CONCLUÍDO',
-          course: 'Laravel: e-mails, eventos assíncronos, uploads e testes',
-          institution: 'Alura',
+          endedIn: "Dez 2017",
+          status: "CONCLUÍDO",
+          course: "Técnico em Informática para Internet",
+          level: "TÉCNICO",
+          institution: "Etec Philadelpho Gouvêa Netto",
+        },
+      ],
+    },
+
+    complementaryCourses: {
+      title: "Cursos Complementares",
+      items: [
+        {
+          id: 1,
+          endedIn: "Fev 2026",
+          status: "CONCLUÍDO",
+          course: "Inglês extremo - Curso completo do zero à fluência",
+          institution: "Udemy",
+        },
+        {
+          id: 2,
+          endedIn: "Dez 2025",
+          status: "CONCLUÍDO",
+          course: "Fundamentos de redes para DevOps",
+          institution: "Udemy",
+        },
+        {
+          id: 3,
+          endedIn: "Jan 2025",
+          status: "CONCLUÍDO",
+          course: "Next e React - Curso completo",
+          institution: "Udemy",
         },
         {
           id: 4,
-          endedIn: 'Jun 2024',
-          status: 'CONCLUÍDO',
-          course: 'Laravel: construindo APIs',
-          institution: 'Alura',
+          endedIn: "Jun 2024",
+          status: "CONCLUÍDO",
+          course: "React: criando um Design System com TailwindCSS",
+          institution: "Alura",
         },
         {
           id: 5,
-          endedIn: 'Out 2022',
-          status: 'CONCLUÍDO',
-          course: 'Vuejs 2 - O Guia Completo com Vue Router e Vuex',
-          institution: 'Udemy',
+          endedIn: "Jun 2024",
+          status: "CONCLUÍDO",
+          course: "Laravel: transações, service container e autenticação",
+          institution: "Alura",
         },
         {
           id: 6,
-          endedIn: 'Mai 2021',
-          status: 'CONCLUÍDO',
-          course: 'Introdução ao Laravel',
-          institution: 'Udemy',
+          endedIn: "Jun 2024",
+          status: "CONCLUÍDO",
+          course: "Laravel: e-mails, eventos assíncronos, uploads e testes",
+          institution: "Alura",
         },
         {
           id: 7,
-          endedIn: 'Nov 2020',
-          status: 'CONCLUÍDO',
-          course: 'Loja Virtual Completa - Android e IOS Com Flutter',
-          institution: 'Udemy',
+          endedIn: "Jun 2024",
+          status: "CONCLUÍDO",
+          course: "Laravel: construindo APIs",
+          institution: "Alura",
         },
         {
           id: 8,
-          endedIn: 'Dez 2017',
-          status: 'CONCLUÍDO',
-          course: 'Programador de Dispositivos Móveis',
-          institution: 'Senac',
+          endedIn: "Out 2022",
+          status: "CONCLUÍDO",
+          course: "Vuejs 2 - O Guia Completo com Vue Router e Vuex",
+          institution: "Udemy",
         },
         {
           id: 9,
-          endedIn: 'Jun 2017',
-          status: 'CONCLUÍDO',
-          course: 'HTML5 e CSS3 - Criação de Websites',
-          institution: 'Senac',
-        }
-      ]
-    }
-  }
+          endedIn: "Mai 2021",
+          status: "CONCLUÍDO",
+          course: "Introdução ao Laravel",
+          institution: "Udemy",
+        },
+        {
+          id: 10,
+          endedIn: "Nov 2020",
+          status: "CONCLUÍDO",
+          course: "Loja Virtual Completa - Android e IOS Com Flutter",
+          institution: "Udemy",
+        },
+        {
+          id: 11,
+          endedIn: "Dez 2017",
+          status: "CONCLUÍDO",
+          course: "Programador de Dispositivos Móveis",
+          institution: "Senac",
+        },
+        {
+          id: 12,
+          endedIn: "Jun 2017",
+          status: "CONCLUÍDO",
+          course: "HTML5 e CSS3 - Criação de Websites",
+          institution: "Senac",
+        },
+      ],
+    },
+  };
 
   return {
-    curriculum
-  }
+    curriculum,
+  };
 }
