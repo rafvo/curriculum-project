@@ -5,13 +5,11 @@ export function useEnglishVersion() {
     name: "Rafael Valério de Oliveira Ricardi",
     profession:
       "Senior Frontend Developer | React • Next.js • Vue • TypeScript",
-
     about: {
       title: "About",
       description:
         "Senior Frontend Developer with over 6 years of experience building scalable web applications. Specialized in React.js, Next.js, and Vue.js with TypeScript, focused on creating high-performance user interfaces and sustainable frontend architectures. Experienced in building design systems, reusable components, integrating complex APIs, and developing applications with data visualization and geospatial mapping. Also experienced in improving code quality, implementing automated tests, and supporting other developers through technical guidance.",
     },
-
     competences: {
       title: "Skills",
       items: [
