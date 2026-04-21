@@ -72,7 +72,7 @@ export function usePortugueseVersion() {
         {
           id: 2,
           name: "Inglês",
-          level: "Intermediário (B1)",
+          level: "Intermediário",
         },
       ],
     },

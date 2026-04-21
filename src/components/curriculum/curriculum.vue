@@ -13,7 +13,7 @@ const props = defineProps<{
 
 <template>
   <div class="w-100">
-    <Header.Root class="px-20">
+    <Header.Root class="px-4 sm:px-20">
       <Header.Title>
         {{ props.curriculum.name }}
       </Header.Title>
@@ -23,14 +23,14 @@ const props = defineProps<{
       </Header.Subtitle>
 
       <Header.Subtitle class="flex text-center">
-        <Icon.Location class="w-3 mr-2" />
+        <Icon.Location class="w-3 mr-2 shrink-0" />
         {{ props.curriculum.location }}
       </Header.Subtitle>
     </Header.Root>
 
-    <Main.Root class="container mx-auto max-w-[46rem]">
+    <Main.Root class="container mx-auto max-w-[46rem] px-4 sm:px-0">
       <Section.Root>
-        <div class="grid grid-cols-3 gap-5 mt-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-4">
           <Section.Content class="col-span-1">
             <Section.Title>
               {{ props.curriculum.contact.title }}
@@ -38,8 +38,9 @@ const props = defineProps<{
 
             <Section.ListItem>
               <Section.Item class="flex">
-                <Icon.Email class="w-5 mr-2" />
+                <Icon.Email class="w-5 mr-2 shrink-0" />
                 <Section.Link
+                  class="min-w-0 break-all"
                   :href="`mailto:${props.curriculum.contact.email}`"
                   target="_blank"
                 >
@@ -48,8 +49,9 @@ const props = defineProps<{
               </Section.Item>
 
               <Section.Item class="flex">
-                <Icon.Whatsapp class="w-5 mr-2" />
+                <Icon.Whatsapp class="w-5 mr-2 shrink-0" />
                 <Section.Link
+                  class="min-w-0 break-all"
                   :href="`https://wa.me/${props.curriculum.contact.whatsapp.cleanNumber}`"
                   target="_blank"
                 >
@@ -58,8 +60,9 @@ const props = defineProps<{
               </Section.Item>
 
               <Section.Item class="flex">
-                <Icon.Linkedin class="w-5 mr-2" />
+                <Icon.Linkedin class="w-5 mr-2 shrink-0" />
                 <Section.Link
+                  class="min-w-0 break-all"
                   :href="props.curriculum.contact.linkedin.url"
                   target="_blank"
                 >
@@ -68,8 +71,9 @@ const props = defineProps<{
               </Section.Item>
 
               <Section.Item class="flex">
-                <Icon.Github class="w-5 mr-2" />
+                <Icon.Github class="w-5 mr-2 shrink-0" />
                 <Section.Link
+                  class="min-w-0 break-all"
                   :href="props.curriculum.contact.github.url"
                   target="_blank"
                 >
@@ -79,7 +83,7 @@ const props = defineProps<{
             </Section.ListItem>
           </Section.Content>
 
-          <Section.Content class="col-span-1 justify-self-center">
+          <Section.Content class="col-span-1 sm:justify-self-center">
             <Section.Title>
               {{ props.curriculum.languages.title }}
             </Section.Title>

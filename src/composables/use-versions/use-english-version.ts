@@ -70,7 +70,7 @@ export function useEnglishVersion() {
         {
           id: 2,
           name: "English",
-          level: "Intermediate (B1)",
+          level: "Intermediate",
         },
       ],
     },
