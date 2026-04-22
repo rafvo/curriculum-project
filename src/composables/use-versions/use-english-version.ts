@@ -75,12 +75,11 @@ export function useEnglishVersion() {
       ],
     },
 
-    curriculumProject: {
-      title: "Curriculum Project",
-      url: "https://www.github.com/rafvo/curriculum",
-      name: "github.com/rafvo/curriculum",
-      description:
-        "Curriculum project built using Vue.js, Nuxt, TypeScript and TailwindCSS.",
+    portfolio: {
+      title: "Portfolio",
+      url: "https://rafvo-dev.vercel.app/en",
+      name: "rafvo-dev.vercel.app",
+      description: "Portfolio built with Next.js and TailwindCSS.",
     },
 
     experiences: {

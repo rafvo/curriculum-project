@@ -3,7 +3,6 @@ import { Main } from "@/components/main";
 import { Header } from "@/components/header";
 import { Section } from "@/components/section";
 import { Icon } from "@/components/icons";
-import { defineProps } from "vue";
 import type { Curriculum } from "@/composables/use-versions/types";
 
 const props = defineProps<{
@@ -104,19 +103,19 @@ function savePdf() {
 
           <Section.Content class="col-span-1">
             <Section.Title>
-              {{ props.curriculum.curriculumProject.title }}
+              {{ props.curriculum.portfolio.title }}
             </Section.Title>
 
             <Section.ListItem>
               <Section.Item>
                 <Section.Link
-                  :href="props.curriculum.curriculumProject.url"
+                  :href="props.curriculum.portfolio.url"
                   target="_blank"
                 >
-                  {{ props.curriculum.curriculumProject.name }}
+                  {{ props.curriculum.portfolio.name }}
                 </Section.Link>
                 <Section.Infotext>
-                  {{ props.curriculum.curriculumProject.description }}
+                  {{ props.curriculum.portfolio.description }}
                 </Section.Infotext>
               </Section.Item>
             </Section.ListItem>

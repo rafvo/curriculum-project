@@ -56,7 +56,7 @@ interface ComplementaryCourse {
   institution: string;
 }
 
-interface CurriculumProject {
+interface Portfolio {
   title: string;
   url: string;
   name: string;
@@ -79,7 +79,7 @@ export interface Curriculum {
     title: string;
     items: Language[];
   };
-  curriculumProject: CurriculumProject;
+  portfolio: Portfolio;
   experiences: {
     title: string;
     items: Experience[];
