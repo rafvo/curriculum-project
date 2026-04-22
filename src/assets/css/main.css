@@ -27,3 +27,25 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    @page {
+        size: A4;
+        margin: 0.6cm 0;
+    }
+
+    @page :first {
+        margin-top: 0;
+    }
+
+    html,
+    body {
+        height: auto !important;
+        overflow: visible !important;
+    }
+}

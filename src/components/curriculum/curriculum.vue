@@ -9,11 +9,15 @@ import type { Curriculum } from "@/composables/use-versions/types";
 const props = defineProps<{
   curriculum: Curriculum;
 }>();
+
+function savePdf() {
+  globalThis.print();
+}
 </script>
 
 <template>
   <div class="w-100">
-    <Header.Root class="px-4 sm:px-20">
+    <Header.Root class="px-4 sm:px-20 print:px-[0.6cm] print:pt-[0.6cm]">
       <Header.Title>
         {{ props.curriculum.name }}
       </Header.Title>
@@ -28,9 +32,9 @@ const props = defineProps<{
       </Header.Subtitle>
     </Header.Root>
 
-    <Main.Root class="container mx-auto max-w-[46rem] px-4 sm:px-0">
+    <Main.Root class="container mx-auto max-w-[46rem] print:max-w-full px-4 sm:px-0 print:px-[0.6cm] print:pb-[0.6cm]">
       <Section.Root>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 print:grid-cols-3 gap-5 mt-4">
           <Section.Content class="col-span-1">
             <Section.Title>
               {{ props.curriculum.contact.title }}
@@ -213,5 +217,15 @@ const props = defineProps<{
         </Section.Content>
       </Section.Root>
     </Main.Root>
+
+    <button
+      class="fixed bottom-6 right-6 flex items-center gap-2 bg-primary text-tertiary px-4 py-2 rounded-lg shadow-lg hover:opacity-80 transition-opacity print:hidden"
+      @click="savePdf"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+      </svg>
+      Salvar PDF
+    </button>
   </div>
 </template>
